@@ -10,9 +10,13 @@ cookies = mechanize.CookieJar()
 browser.set_cookiejar(cookies)
 browser.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36')]
 browser.set_handle_refresh(False)
-try:
+try: 
     url = 'https://m.facebook.com/login.php'
     print ('url open sucessfull ')     
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 def sp(stri):
     for letter in stri:
         print(letter, end = "")
