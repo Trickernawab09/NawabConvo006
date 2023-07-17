@@ -12,12 +12,7 @@ browser.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleW
 browser.set_handle_refresh(False)
 try:
     url = 'https://m.facebook.com/login.php'
-    print ('url open sucessfull ')
-    if os.name == 'nt':
-        os.system('cls')
-    else:
-        os.system('clear')
-        
+    print ('url open sucessfull ')     
 def sp(stri):
     for letter in stri:
         print(letter, end = "")
