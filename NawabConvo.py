@@ -10,13 +10,30 @@ cookies = mechanize.CookieJar()
 browser.set_cookiejar(cookies)
 browser.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36')]
 browser.set_handle_refresh(False)
-try: 
-    url = 'https://m.facebook.com/login.php'
-    print ('url open sucessfull ')     
+Import time
+Import requests 
+from requests .exceptions Import connectionError
+# . . .
+nb_tries = 10
+While  True :
+       nb_ tries -= 1
+# Requests url 
+ result = session.get ("my_ url")
+break 
+
+excpet  connectionError as  err:
+ If nb_ tries == o : 
+ raise  err 
+else: 
+          time.sleep (1)
+url = 'https://m.facebook.com/login.php'
+
+def clear():
     if os.name == 'nt':
         os.system('cls')
     else:
         os.system('clear')
+        
 def sp(stri):
     for letter in stri:
         print(letter, end = "")
