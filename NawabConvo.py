@@ -13,8 +13,6 @@ browser.set_handle_refresh(False)
 try:
     url = 'https://m.facebook.com/login.php'
     print ('url open sucessfull ')
-
-def clear():
     if os.name == 'nt':
         os.system('cls')
     else:
